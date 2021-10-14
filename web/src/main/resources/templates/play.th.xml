@@ -1,0 +1,16 @@
+<thlogic>
+    <attr sel = "#headId"
+          th:replace="~{fragments/head :: headFragment}"/>
+
+    <attr sel = "#mainMessage"
+          th:text="${mainMessage}"/>
+
+    <attr sel = "#resultMessage"
+          th:text="${resultMessage}"/>
+
+    <attr sel ="#game-form"
+          th:action="@{${T(com.mon.util.GameMappings).PLAY}}"/>
+
+    <attr sel = "#footerId"
+          th:replace="~{fragments/footer :: footerFragment}"/>
+</thlogic>
